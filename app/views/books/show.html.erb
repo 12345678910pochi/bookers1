@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bookers</title>
+</head>
+<body>
+	<div id="main_show">
+		<p><span>title : <%= @book.title %></span></p>
+		<p><span>body : <%= @book.body %></span></p>
+	</div>
+	<div>
+		<p>
+			<span class="link_show"><%= link_to "Edit", edit_book_path %></span>
+			<span class="link_show">|</span>
+			<span class="link_show"><%= link_to "Back", new_book_path %></span>
+		</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: borderbox;
+}
+
+#re_delete{
+	margin: 30px;
+	color: #35EA75;
+}
+
+#body_new {
+	margin-left: 30px; 
+}
+
+#main_new {
+	margin: 16px;
+}
+
+td {
+	padding: 8px;
+}
+
+#sub_new {
+	padding: 16px;
+}
+
+.link_show {
+	padding: 5px;
+}

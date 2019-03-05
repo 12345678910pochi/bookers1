@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bookers</title>
+</head>
+<body>
+
+	<h1>Editing Book</h1>
+	<br>
+	<div class="submit_new">
+			<%= form_for(@book) do |post| %>
+			<label for="book_title">Title</label>
+			<div id="post_title"><%= post.text_field :title %></div>
+			<label for="book_body">Body</label>
+			<div id="post_body"><%= post.text_area :body %></div>
+			<div><%= post.submit "Update Book" %></div>
+			<% end %>
+		</div>
+
+		<div>
+		<p>
+			<span class="link_show"><%= link_to "Show", book_path %></span>
+			<span class="link_show">|</span>
+			<span class="link_show"><%= link_to "Back", new_book_path %></span>
+		</p>
+	</div>
+</body>
+</html>
